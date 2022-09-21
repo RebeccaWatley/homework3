@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["PatientID"]?></td>
+    <td><a href="patient-doctor.php?id="><?=$row["PatientID"]?></a></td>
     <td><?=$row["FirstName"]?></td>
     <td><?=$row["LastName"]?></td>
     <td><?=$row["ContactNumber"]?></td>
