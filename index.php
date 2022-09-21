@@ -28,7 +28,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT PatientID, FirstName, LastName, ContactNumber from Patient";
+$sql = "SELECT PatientID, FirstName, LastName, Gender from Patient";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     <td><a href="patient-doctor.php?id="><?=$row["PatientID"]?></a></td>
     <td><?=$row["FirstName"]?></td>
     <td><?=$row["LastName"]?></td>
-    <td><?=$row["ContactNumber"]?></td>
+    <td><?=$row["Gender"]?></td>
   </tr>
 <?php
   }
