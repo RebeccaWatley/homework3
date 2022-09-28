@@ -41,8 +41,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["PatientID"]?></td>
-    <td><a href="patient-doctor.php?id=<?=$row["PatientID"]?>"><?=$row["FirstName"]?><?=$row["LastName"]?></a></td>
-    <td><?=$row["FirstName"]?></td>
+    <td><a href="patient-doctor.php?id=<?=$row["PatientID"]?>"><?=$row["FirstName"]?></a></td>
     <td><?=$row["LastName"]?></td>
     <td><?=$row["Gender"]?></td>
   </tr>
