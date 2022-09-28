@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <h2>Hello! Welcome to the PatientPortal</h2>
-    <h6>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h6>
+    <h2>Hello! Welcome to the Patient Portal</h2>
+    <h6>On this website you can find information about your patient, their dotor, and what day their appointment is on!</h6>
   </body>
     <a class="btn btn-primary" href="Patient.php" role="button">Patient Information</a>
     <a class="btn btn-primary" href="Doctor.php" role="button">Doctor Information</a>
