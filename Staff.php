@@ -39,8 +39,8 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><a href="staff-appointment.php?id=<?=$row["StaffName"]?>"></td>
     <td><?=$row["AdminID"]?></td>
+    <td><a href="staff-appointment.php?id=<?=$row["AdminID"]?>"><?=$row["StaffName"]?>"></td>
     <td><?=$row["Postion"]?></td>
     <td><?=$row["Gender"]?></td>
   </tr>
