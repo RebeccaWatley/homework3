@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
     <td>
       <form method="post" action="Doctor-Appointment.php">
         <input type="hidden" name="id" value="<?=$row["DoctorID"]?>" />
-        <input type="submit" value="Sections" />
+        <input type="submit" value="Appointment" />
       </form>
     </td>
   </tr>
