@@ -10,54 +10,9 @@
     <h2>Hello! Welcome to the PatientPortal</h2>
     <h6>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h6>
   </body>
-  
     <h1>Patients</h1>
-  <a class="btn btn-primary" href="Patient.php" role="button">PatientInformation</a>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>PatientID</th>
-      <th>FirstName</th>
-      <th>LastName</th>
-      <th>Gender</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-$servername = "localhost";
-$username = "rebeccca_ruser";
-$password = "WL]8Dmr[Qag6";
-$dbname = "rebeccca_MIS";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT PatientID, FirstName, LastName, Gender from Patient";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-?>
-  <tr>
-    <td><?=$row["PatientID"]?></td>
-    <td><a href="patient-doctor.php?id=<?=$row["PatientID"]?>"><?=$row["FirstName"]?></a></td>
-    <td><?=$row["LastName"]?></td>
-    <td><?=$row["Gender"]?></td>
-  </tr>
-<?php
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
-  </tbody>
-    </table>
+    <a class="btn btn-primary" href="Patient.php" role="button">PatientInformation</a>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
