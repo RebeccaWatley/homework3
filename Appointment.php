@@ -20,9 +20,9 @@
   <tbody>
     <?php
 $servername = "localhost";
-$username = "rebecca_ruser";
+$username = "rebeccca_ruser";
 $password = "WL]8Dmr[Qag6";
-$dbname = "rebecca_MIS";
+$dbname = "rebeccca_MIS";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
