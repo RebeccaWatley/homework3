@@ -8,5 +8,5 @@
   </head>
   <body>
     <h2>Hello! Welcome to the PatientPortal</h2>
-    <h4>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h4>
+    <h6>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h6>
   </body>
