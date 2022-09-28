@@ -15,7 +15,7 @@
       <th>PatientID</th>
       <th>FirstName</th>
       <th>LastName</th>
-      th>Gender</th>
+      <th>Gender</th>
     </tr>
   </thead>
   <tbody>
