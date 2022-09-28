@@ -21,7 +21,7 @@
     <?php
 $servername = "localhost";
 $username = "rebecca_ruser";
-$password = "KonaBerry2001!";
+$password = "WL]8Dmr[Qag6";
 $dbname = "rebecca_MIS";
 
 // Create connection
