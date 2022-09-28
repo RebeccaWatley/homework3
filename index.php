@@ -10,3 +10,9 @@
     <h2>Hello! Welcome to the PatientPortal</h2>
     <h6>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h6>
   </body>
+?>
+  <tr>
+    <td><?=$row["instructor_id"]?></td>
+    <td><a href="staff-appointment.php?id=<?=$row["AdminID"]?>"><?=$row["StaffName"]?><?=$row["Postion"]?></a></td>
+  </tr>
+<?php
