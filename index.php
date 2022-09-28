@@ -10,8 +10,10 @@
     <h2>Hello! Welcome to the PatientPortal</h2>
     <h6>On this website you can find information about your Patient, their Doctor, and what day thier appointment is on!</h6>
   </body>
-    <h1>Patients</h1>
-    <a class="btn btn-primary" href="Patient.php" role="button">PatientInformation</a>
+    <a class="btn btn-primary" href="Patient.php" role="button">Patient Information</a>
+    <a class="btn btn-primary" href="Doctor.php" role="button">Doctor Information</a>
+    <a class="btn btn-primary" href="Appointment.php" role="button">Appointment Information</a>
+    <a class="btn btn-primary" href="Staff.php" role="button">Staff Information</a>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
