@@ -12,6 +12,7 @@
   </body>
   
     <h1>Patients</h1>
+  <a class="btn btn-primary" href="Patient.php" role="button">PatientInformation</a>
 <table class="table table-striped">
   <thead>
     <tr>
