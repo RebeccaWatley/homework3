@@ -31,7 +31,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT AdminID, StaffName, Postion, Gender from Staff";
+$sql = "SELECT * from Staff";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><a href="staff-appointment.php?id=<?=$row["AdminID"]?>"><?=$row["StaffName"]?><?=$row["Postion"]?></a></td>
+    <td><a href="staff-appointment.php?id=<?=$row["AdminID"]?>"><?=$row["StaffName"]?><?=$row["Postion"]?><?=$row["Gender"]?></a></td>
   </tr>
 <?php
   }
