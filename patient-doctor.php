@@ -33,7 +33,7 @@ if ($conn->connect_error) {
 }
 $iid = $_GET['id'];
 //echo $iid;
-$sql = "select DoctorID.id, DoctorName, JobTitle, p.FirstName from Doctor d join Patient p on p.PatientID = d.PatientID where p.PatientID=" . $iid;
+$sql = "select d.DoctorID, d.DoctorName, d.JobTitle, p.FirstName from Doctor d join Patient p on p.PatientID = d.PatientID where p.PatientID=" . $iid;
 //echo $sql;
     $result = $conn->query($sql);
 
