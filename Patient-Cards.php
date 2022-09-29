@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT FirstName, LastName from Patient";
+$sql = "SELECT PatientID, FirstName, LastName from Patient";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -34,11 +34,11 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["FirstName"]?><?=$row["LastName"]?></h5>
       <p class="card-text"><ul>
 <?php
-    $section_sql = "select c.description from section s join instructor i on i.instructor_id = s.instructor_id join course c on c.course_id = s.course_id where i.instructor_id=" . $row["instructor_id"];
+    $section_sql = "select d.DoctorID, d.DoctorName, d.JobTitle, p.FirstName from Doctor d join Patient p on p.PatientID = d.PatientID where p.PatientID=". $row["PatientID"];
     $section_result = $conn->query($section_sql);
     
     while($section_row = $section_result->fetch_assoc()) {
-      echo "<li>" . $section_row["description"] . "</li>";
+      echo "<li>" . $section_row["DoctorName"] . $section_row["JobTitle"]"</li>";
     }
 ?>
       </ul></p>
