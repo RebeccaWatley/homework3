@@ -21,9 +21,9 @@
   <tbody>
     <?php
 $servername = "localhost";
-$username = "projecto_homework3";
-$password = "0w_zeP}]OVy0";
-$dbname = "projecto_homework3";
+$username = "rebeccca_ruser";
+$password = "WL]8Dmr[Qag6";
+$dbname = "rebeccca_MIS";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -33,7 +33,7 @@ if ($conn->connect_error) {
 }
 $iid = $_GET['id'];
 //echo $iid;
-$sql = "select section_id, section_number, i.instructor_name, c.prefix, c.number from section s join instructor i on i.instructor_id = s.instructor_id join course c on c.course_id = s.course_id where i.instructor_id=" . $iid;
+$sql = "select DoctorID.id, DoctorName, JobTitle, p.FirstName from Doctor d join Patient p on p.PatientID = d.PatientID where p.PatientID=" . $iid;
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -42,11 +42,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["section_id"]?></td>
-    <td><?=$row["prefix"]?></td>
-    <td><?=$row["number"]?></td>
-    <td><?=$row["section_number"]?></td>
-    <td><?=$row["instructor_name"]?></td>
+    <td><?=$row["DoctorID"]?></td>
+    <td><?=$row["DoctorName"]?></td>
+    <td><?=$row["JobTitle"]?></td>
+    <td><?=$row["FirstName"]?></td>
   </tr>
 <?php
   }
