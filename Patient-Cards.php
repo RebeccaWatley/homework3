@@ -12,7 +12,7 @@
     <?php
 $servername = "localhost";
 $username = "rebeccca_ruser";
-$password = "0w_zeP}]OVy0";
+$password = "WL]8Dmr[Qag6";
 $dbname = "rebeccca_MIS";
 
 // Create connection
