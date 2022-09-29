@@ -11,11 +11,10 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>Prefix</th>
-      <th>Number</th>
-      <th>Section</th>
-      <th>Instructor</th>
+      <th>Doctor ID</th>
+      <th>Doctor Name</th>
+      <th>Job Title</th>
+      <th>Patient First Name</th>
     </tr>
   </thead>
   <tbody>
