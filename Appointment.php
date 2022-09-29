@@ -31,7 +31,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select ApptID, ApptDay, d.DoctorName, p.PatientID from Appointment a join Doctor d on d.DoctorName = a.DoctorName join Patient p on p.PatientID = a.PatientID";
+$sql = "select * from Appointment";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
