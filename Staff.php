@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["AdminID"]?></td>
-    <td><a href="staff-appointment.php?id=<?=$row["AdminID"]?>"><?=$row["StaffName"]?></td>
+    <td><?=$row["StaffName"]?></td>
     <td><?=$row["Position"]?></td>
     <td><?=$row["Gender"]?></td>
   </tr>
