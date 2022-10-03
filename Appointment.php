@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Appointments</h1>
-    <h4> The following information is whose patient ID number corresponds to the appointment day and which doctors ID number they are seeing"
+    <h4> The following information is whose patient ID number corresponds to the appointment day and which doctors ID number they are seeing</h4>
 <table class="table table-striped">
   <thead>
     <tr>
