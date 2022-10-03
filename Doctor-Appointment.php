@@ -31,11 +31,8 @@ if ($conn->connect_error) {
 }
 $iid = $_POST['id'];
 //echo $iid;
-$sql = "select a.ApptDay, p.FirstName, s.StaffName from Appointment a join Patient p on p.FirstName = a.FirstName join 
-Staff s on s.StaffName = a.StaffName where s.StaffName=" . $sid;
-    
-    SELECT a.ApptDay, p.FirstName, s.StaffName from Appointment a join Patient p on p.PatientID = a.PatientID join Staff s on
-      s.AdminID = a.AdminID where s.AdminID=
+$sql = "SELECT a.ApptDay, p.FirstName, s.StaffName from Appointment a join Patient p on p.PatientID = a.PatientID join Staff s on
+      s.AdminID = a.AdminID where s.AdminID=" . $sid;
       
 //echo $sql;
     $result = $conn->query($sql);
