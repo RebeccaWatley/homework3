@@ -13,7 +13,7 @@
     <tr>
       <th>Appointment Day</th>
       <th>Patient Name</th>
-      <th>Staff Name</th>
+      <th>Staff Name who made the Appointment</th>
     </tr>
   </thead>
   <tbody>
