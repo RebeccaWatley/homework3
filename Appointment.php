@@ -8,13 +8,14 @@
   </head>
   <body>
     <h1>Appointments</h1>
+    <h4> The following information is whose patient ID number corresponds to the appointment day and which doctors ID number they are seeing"
 <table class="table table-striped">
   <thead>
     <tr>
       <th>ApptID</th>
       <th>ApptDay</th>
-      <th>Patient</th>
-      <th>Doctor</th>
+      <th>PatientID</th>
+      <th>DoctorID</th>
     </tr>
   </thead>
   <tbody>
