@@ -13,7 +13,7 @@
     <tr>
       <th>Appointment Day</th>
       <th>Patient Name</th>
-      <th>Staff Name/th>
+      <th>Staff Name</th>
     </tr>
   </thead>
   <tbody>
@@ -29,7 +29,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$iid = $_POST['id'];
+$sid = $_POST['id'];
 //echo $iid;
 $sql = "SELECT a.ApptDay, p.FirstName, s.StaffName from Appointment a join Patient p on p.PatientID = a.PatientID join Staff s on
       s.AdminID = a.AdminID where s.AdminID=" . $sid;
